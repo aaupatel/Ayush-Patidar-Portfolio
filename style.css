@@ -58,7 +58,7 @@ body {
     position: fixed;
     top: 2vh;
     overflow: hidden;
-    z-index: 99;
+    z-index: 999;
 }
 
 #nav>a {
@@ -67,32 +67,6 @@ body {
     line-height: 2.4vw;
     text-decoration: none;
     width: 10vw;
-}
-
-.resume-btn {
-    right: 2vmax;
-    top: 1vmax;
-    z-index: 1111;
-    padding: .9vmax 1.5vmax;
-    border-radius: 5vmax;
-    border: none;
-    color: #393939;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 0 1vmax #F6BA53;
-    background: linear-gradient(to right, #ffe2af, #ffd388);
-    box-shadow: 0 0 0.8vmax #F6BA53;
-    background: linear-gradient(to right,  #ffe2af, #ffd388);
-    transition: 0.5s all;
-    cursor: pointer;
-}
-
-.resume-btn a {
-    font-size: 1.1vmax;
-    /* background-color: red; */
-    font-family: gilroy;
-    font-weight: 600;
 }
 
 .resume-btn-prt {
@@ -122,6 +96,66 @@ body {
     font-weight: 600;
 }
 
+
+.resume-btn{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #17795E;
+    background-color: #209978;
+    overflow: hidden;
+}
+  
+.resume-btn, .button__icon, .button__text {
+    transition: all 0.3s;
+}
+  
+.resume-btn .button__text {
+    transform: translateX(32px);
+    color: #fff;
+    font-weight: 600;
+}
+  
+.resume-btn .button__icon {
+    position: absolute;
+    transform: translateX(160px);
+    height: 100%;
+    width: 39px;
+    background-color: #17795E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.resume-btn .svg {
+    width: 20px;
+    fill: #fff;
+}
+  
+.resume-btn:hover {
+    background: #17795E;
+}
+  
+.resume-btn:hover .button__text {
+    color: transparent;
+}
+  
+.resume-btn:hover .button__icon {
+    width: 200px;
+    transform: translateX(0);
+}
+  
+.resume-btn:active .button__icon {
+    background-color: #146c54;
+}
+  
+.resume-btn:active {
+    border: 1px solid #146c54;
+}
+
 #nav svg {
     height: 5.1vw;
     cursor: pointer;
@@ -141,7 +175,7 @@ body {
         position: fixed;
         top: 1vh;
         overflow: hidden;
-        z-index: 99;
+        z-index: 999;
     }
 
     #nav>a {
@@ -152,30 +186,22 @@ body {
         width: 10vw;
     }
 
-    .resume-btn {
-        display: none;
+    .resume-btn{
+        width: 80px;
     }
+
+    .button__text{
+        display: block;
+        font-size: 2vw;
+        margin-left: -7vw;
+    }
+
 
     #nav svg {
         height: 8vw;
         cursor: pointer;
         border-radius: 50%;
         margin-left: 7.1vw;
-    }
-
-    .resume-btn-prt {
-        padding: .9vmax 1.6vmax;
-        margin-left: -11vw;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    .resume-btn-prt a {
-        font-size: 2.2vmax;
-        /* background-color: red; */
-        font-family: gilroy;
-        font-weight: 600;
     }
 }
 
@@ -317,7 +343,7 @@ body {
 
 #intro-div {
     text-align: center;
-    width: 95%;
+    width: 70%;
     padding-top: 4vh;
     padding-bottom: 10vh;
     /* background-color: red; */
@@ -326,11 +352,11 @@ body {
 }
 
 #intro-div h1 {
-    /* font-family: Gilroy; */
-    word-spacing: 0.2vw;
-    letter-spacing: 0.01vw;
-    font-size: 4vw;
-    line-height: 4.5vw;
+    font-family: Gilroy;
+    /*word-spacing: 0.2vw;
+    letter-spacing: 0.01vw; */
+    font-size: 3vw;
+    line-height: 4vw;
 }
 
 #intro-div h1 a {
@@ -823,15 +849,15 @@ body {
         position: relative;
         z-index: 99;
         transition: color ease-in 0.4s;
-        width: 20%;
+        width: 25%;
         /* background-color: red; */
     }
 
     #artworks a h5 {
-        font-size: 1.6vmax;
+        font-size: 1.3vmax;
         font-weight: 600;
         font-family: gilroy;
-        width: 75%;
+        width: 70%;
         /* background-color: red; */
         position: relative;
         transition: color ease-in 0.4s;
@@ -874,7 +900,7 @@ body {
 
 .page5 {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     padding: 0 2vmax;
     margin-top: 0vh;
     background-color: #393939;
@@ -886,7 +912,7 @@ body {
 }
 
 .page5>h1 {
-    font: 700 9vmax "Gilroy";
+    font: 700 5vmax "Gilroy";
     font-weight: 900;
 }
 
@@ -941,7 +967,7 @@ footer span {
 
 footer>img {
     width: 1.8vmax;
-    margin: 0 .5vmax;
+    margin: 0 0vmax;
 }
 
 /* ----------------- for all----------------- */
@@ -956,6 +982,10 @@ a {
 }
 
 @media (max-width:600px) {
+    .page5 {
+        height: 95vh;
+        width: 100%;
+    }
     .page5>h1 {
         font-size: 8.4vmax;
     }

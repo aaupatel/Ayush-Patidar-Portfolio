@@ -13,14 +13,12 @@
 <body>
     <div id="nav">
         <a href="#">Ayush Patidar</a>
-        <svg onclick="locoScroll.scrollTo('#main')" class="header_back__30UYF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 62"> <g fill="white" fill-rule="nonzero"> <path d="M31 .5C14.155.5.5 14.155.5 31S14.155 61.5 31 61.5 61.5 47.845 61.5 31 47.845.5 31 .5zm0 1c16.292 0 29.5 13.208 29.5 29.5S47.292 60.5 31 60.5 1.5 47.292 1.5 31 14.708 1.5 31 1.5z"></path>
+        <svg id="scrollicon" onclick="locoScroll.scrollTo('#main')" class="header_back__30UYF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 62"> <g fill="white" fill-rule="nonzero"> <path d="M31 .5C14.155.5.5 14.155.5 31S14.155 61.5 31 61.5 61.5 47.845 61.5 31 47.845.5 31 .5zm0 1c16.292 0 29.5 13.208 29.5 29.5S47.292 60.5 31 60.5 1.5 47.292 1.5 31 14.708 1.5 31 1.5z"></path>
             <path d="M38.974 33.704c-1.733-.021-5.35-1.67-15.577-1.712 3.83.877 7.425 2.418 7.318 4.622-.043 1.113-.728 1.926-1.947 1.947-.471 0-.963-.15-1.37-.556-1.37-1.37-1.284-4.922-6.098-6.398l-.407-.107c5.221-1.37 5.2-4.986 6.505-6.462.385-.428.942-.556 1.412-.556 1.156 0 1.883.813 1.905 1.947.021 2.204-3.66 3.787-7.51 4.643 10.377-.064 14.036-1.712 15.748-1.669 1.326 0 2.375.963 2.353 2.14 0 1.24-1.005 2.16-2.332 2.16z"></path></g>
         </svg>
-        <button class="resume-btn">
-            <a style="text-decoration: initial;" href="#" target="_blank" download="">get my resume offline</a>
-        </button>
-        <button class="resume-btn-prt">
-            <a style="text-decoration: initial;" href="#" target="_blank" download="">get resume</a>
+        <button class="resume-btn" type="button" onclick="window.location.href='https://drive.google.com/file/d/1Cnx1ewcXZ6002Si5PwTmUrd-fWESIVN9/view?usp=sharing'" download="Ayush-Patidar-resume.pdf">
+            <span class="button__text">Download Resume</span>
+            <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
         </button>
     </div>
     <div id="main">
@@ -59,15 +57,14 @@
             <div class="box dev-box">
                 <h4>development</h4>
                 <div class="elem-div">
-                    <img src="./images/page3-logos/React-icon.svg.png" alt="">
-                    <img src="./images/page3-logos/js-min.png" alt="">
-                    <img src="./images/page3-logos/node-min.png" alt="">
-                    <img src="./images/page3-logos/mongodb-min.png" alt="">
-                    <img src="./images/page3-logos/github-min.png" alt="">
-                    <img src="./images/page3-logos/gsap-min.png" alt="">
-                    <img src="./images/page3-logos/download-min.png" alt="">
                     <img src="./images/page3-logos/html-min.png" alt="">
                     <img src="./images/page3-logos/css-min.png" alt="">
+                    <img src="./images/page3-logos/js-min.png" alt="">
+                    <img src="./images/page3-logos/gsap-min.png" alt="">
+                    <img src="./images/page3-logos/github-min.png" alt="">
+                    <img src="./images/page3-logos/node-min.png" alt="">
+                    <img src="./images/page3-logos/mongodb-min.png" alt="">
+                    <img src="./images/page3-logos/download-min.png" alt="">
                 </div>
             </div>
             <div class="box des-box">
@@ -75,12 +72,12 @@
                 <div class="elem-div">
                     <img src="./images/page3-logos/Canva logo.webp" alt="">
                     <img class="figmaimg" src="./images/page3-logos/figma-min.png" alt="">
-                    <img src="./images/page3-logos/xd-min.png" alt="">
+                    <!-- <img src="./images/page3-logos/xd-min.png" alt="">
                     <img src="./images/page3-logos/ps-min.png" alt="">
                     <img src="./images/page3-logos/premierepro-min.png" alt="">
                     <img src="./images/page3-logos/illus.png" alt="">
                     <img src="./images/page3-logos/studio-min.png" alt="">
-                    
+                     -->
                 </div>
 
             </div>
@@ -131,7 +128,7 @@
                     <div id="sliding-div"></div>
                 </a>
                 <a target="_blank" href="https://aaupatel.github.io/Disney-Hotstar-Clone/">
-                    <h4>Disney+Hotstar-Clone</h4>
+                    <h4>Disney + Hotstar-Clone</h4>
                     <h5>Created Disney+Hotstar Clone with HTML, CSS, and JavaScript. Implemented dynamic movie carousel and interactive video cards. Demonstrates proficiency in front-end development.</h5>
                     <div id="sliding-div"></div>
                 </a>

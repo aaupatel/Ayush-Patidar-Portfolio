@@ -30,22 +30,22 @@ ScrollTrigger.refresh();
 
 // rotating an arrow in navbar
 
-gsap.to("#nav svg", {
+gsap.to("#scrollicon", {
   rotate: 90,
   duration: 1,
   backgroundColor: "#111",
   scrollTrigger: {
-    trigger: "#nav svg",
+    trigger: "#scrollicon",
     scroller: "#main",
     start: "top -5%",
     end: "top -6%",
     scrub: 1
   }
 })
-gsap.to("#nav svg", {
+gsap.to("#scrollicon", {
   backgroundColor: "#111",
   scrollTrigger: {
-    trigger: "#nav svg",
+    trigger: "#scrollicon",
     scroller: "#main",
     start: "top -15%",
     end: "top -400%",
